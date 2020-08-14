@@ -6,8 +6,8 @@ export default function Navigation(){
 
     return(
         <div>
-            <button onClick={() => histroy.push('/')}>Home</button>
-            <button onClick={() => histroy.push('/pizza')}>Build Your Pizza</button>
+            <button id="HomeButton" onClick={() => histroy.push('/')}>Home</button>
+            <button id="PizzaButton" onClick={() => histroy.push('/pizza')}>Build Your Pizza</button>
         </div>
     )
 }

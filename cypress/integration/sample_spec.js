@@ -1,7 +1,11 @@
 describe('Adding text to the text box', function() {
     it('Visits The Page', function(){
-            cy.visit('http://localhost:3000/pizza');
+            cy.visit('http://localhost:3000');
     });
+
+    it('Visits The Pizza Page', function() {
+            cy.get('#PizzaButton').click();
+    })
 
     it('Types A Name', function() {
             cy.get("#name").type("Tyson")
